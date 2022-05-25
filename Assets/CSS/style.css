@@ -1,10 +1,10 @@
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-body{
+body {
   background-image: url(/Assets/Images/fundb.jpg);
   position: relative;
   height: 100vh;
@@ -16,7 +16,7 @@ body{
   background-position: bottom;
 }
 
-.container{
+.container {
   width: 500px;
   height: 500px;
   text-align: center;
@@ -30,13 +30,13 @@ body{
   border-radius: 20px 80px;
 }
 
-.container h1{
+.container h1 {
   font-size: 48px;
   color: white;
   margin-bottom: 20px;
 }
 
-input{
+input {
   width: 280px;
   padding: 8px;
   margin: 5px 0;
@@ -60,7 +60,7 @@ button {
   font-family: inherit;
   color: black;
   cursor: pointer;
- }
+}
  
  button::before {
   content: '';
@@ -74,13 +74,20 @@ button {
   transition: .5s ease;
   display: block;
   z-index: -1;
- }
+}
  
  button:hover::before {
   width: 105%;
- }
+}
  
  button:hover {
   color: #111;
- }
+}
  
+#resultado {
+  font-size: 20px;
+  margin-top: 10px;
+  color: black;
+  padding: 0;
+  text-align: justify;
+}
