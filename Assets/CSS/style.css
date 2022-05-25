@@ -1,0 +1,86 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-image: url(/Assets/Images/fundb.jpg);
+  position: relative;
+  height: 100vh;
+  width: 100vh;
+  background-size: cover;
+  max-width: 1280px;
+  display: flex;
+  margin: auto;
+  background-position: bottom;
+}
+
+.container{
+  width: 500px;
+  height: 500px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background: lightseagreen;
+  background-size: cover;
+  margin: auto;
+  border-radius: 20px 80px;
+}
+
+.container h1{
+  font-size: 48px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+input{
+  width: 280px;
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: none;
+  background-color: white;
+}
+
+button {
+  padding: 0.8em 1.8em;
+  margin-top: 5px;
+  border: 2px solid black;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: .3s;
+  z-index: 1;
+  font-family: inherit;
+  color: black;
+  cursor: pointer;
+ }
+ 
+ button::before {
+  content: '';
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: white;
+  transition: .5s ease;
+  display: block;
+  z-index: -1;
+ }
+ 
+ button:hover::before {
+  width: 105%;
+ }
+ 
+ button:hover {
+  color: #111;
+ }
+ 
